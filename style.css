@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing:border-box;
 }
 a{
     text-decoration: none;
@@ -9,7 +10,6 @@ a{
 hr{
     height: 1px;
     width: 100%;
-    margin-bottom: 32px;
     background-color:black;
 }
 .nav_li{
@@ -28,6 +28,27 @@ hr{
     height: 70px;
     width: 100%;
 }
+
+
+#linkPanel1{
+    position: fixed;
+    margin-top: 7px;
+    margin-left: 30px;
+}
+#linkPanel2{
+    position: fixed;
+    margin-top: 7px;
+    margin-left: 30px;
+}
+.hidden1 {
+    display: none;
+}/*скрытие ссылок на сайты с сайтами */
+.hidden2 {
+    display: none;
+}/*скрытие ссылок на сайты с сайтами */
+
+
+
 ul{
     list-style-type: none;
 }
@@ -39,15 +60,26 @@ ul{
     display: flex;
 }
 .reg_li_whith{
+    margin-left: 50px;
+    margin-right: 50px;
     height: 40px;
-    width: 210px;
-    background-color:white;
+    width: 200px;
+    background-color:rgb(255, 255, 255);
+    border: none;
+    color:rgb(0, 0, 0);
+    cursor: pointer; /* Устанавливаем курсор по умолчанию для кнопки */
+    border: 1px solid #000000;
 }
 .reg_li_blek{
+    margin-left: 50px;
+    margin-right: 50px;
     height: 40px;
     width: 200px;
     background-color:rgb(0, 0, 0);
+    border: none;
     color:white;
+    cursor: pointer; /* Устанавливаем курсор по умолчанию для кнопки */
+    border: 1px solid #ccc;
 }
 .header_bottom{
     display: flex;
@@ -55,11 +87,14 @@ ul{
     height: 400px;
 }
 .header_left{
+    margin-top: 32px;
     display: flex;
+    width: 500px;
 }
 .header_right{
-    width: 560px;
-    background-color:#EEEEEE;
+    margin-left: 90px;
+    width: 500px;
+    background-color:#ffffff;
 }
 .header_p{
     padding: 20px;
@@ -70,9 +105,15 @@ ul{
 
 
 .img_big{
+    display: flex;
+    justify-content: center;
+    align-items:center;
     height: 676px;
     width: 100%;
-    background-color:rgb(215, 215, 215);
+    background-image: url(/img/0rdDzHtYTdSqskGfxNL0cQ.webp);
+}
+img{
+    width: 100%;
 }
 .search{
     display: flex;
@@ -80,30 +121,41 @@ ul{
     justify-content: center;
     box-sizing: border-box;
     height: 500px;
-    width: 100%;
-    padding: 112px 0px 64px 112px;
+    width: 1000px;
+    padding: 90px 0px 90px 64px;
     background-color:black;
     color:aliceblue;
 }
 .search_p{
-    margin-top: 24px;
-    margin-bottom: 32px;
+    margin-top: 44px;
+    margin-bottom: 52px;
 }
 .search_button_1{
+    margin-left: 50px;
+    margin-right: 50px;
     height: 40px;
-    width: 210px;
-    background-color:white;
+    width: 200px;
+    background-color:rgb(255, 255, 255);
+    border: none;
+    color:rgb(0, 0, 0);
+    cursor: pointer; /* Устанавливаем курсор по умолчанию для кнопки */
 }
 .search_button_2{
+    margin-left: 50px;
+    margin-right: 50px;
     height: 40px;
     width: 200px;
     background-color:rgb(0, 0, 0);
+    border: none;
     color:white;
+    cursor: pointer; /* Устанавливаем курсор по умолчанию для кнопки */
+    border: 1px solid #ccc;
 }
 
 
 
 .open_services{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -119,7 +171,7 @@ ul{
     justify-content: center;
 }
 h3{
-    padding: 24px;
+    padding: 20px;
 }
 .foot_p{
     margin-bottom: 32px;

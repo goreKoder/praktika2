@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <title>Document</title>
 </head>
 <body>
@@ -14,8 +14,28 @@
                 <ul class="nav_type">
                     <li><a href="" class="nav_li">Главная страница</a></li>
                     <li><a href="" class="nav_li">Поиск по городу</a></li>
-                    <li><a href="" class="nav_li">Популярные категории</a></li>
-                    <li><a href="" class="nav_li">Больше вариантов</a></li>
+                    <li><a href="#" id="togglePanel1" class="nav_li">Популярные категории</a>
+                        <div id="linkPanel1" class="hidden1">
+                            <ul>
+                                <li><a href="index_sport.html">Спорт</a></li>
+                                <li><a href="index_science.html">Наука</a></li>
+                                <li><a href="index_reading.html">Чтение</a></li>
+                                <li><a href="index_painting.html">Рисование</a></li>
+                                <li><a href="index_gardening.html">Садоводство</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#" id="togglePanel2" class="nav_li">Больше вариантов</a>
+                        <div id="linkPanel2" class="hidden2">
+                            <ul>
+                                <li><a href="index_sport.html">Спорт</a></li>
+                                <li><a href="index_science.html">Наука</a></li>
+                                <li><a href="index_reading.html">Чтение</a></li>
+                                <li><a href="index_painting.html">Рисование</a></li>
+                                <li><a href="index_gardening.html">Садоводство</a></li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
                 <ul class="reg">
                     <li><button class="reg_li_whith">Присоединяйтесь к нам</button></li>
@@ -32,7 +52,7 @@
                             <li>
                                 <img src="" alt="">
                                 <div class="header_p">
-                                    <h6>Больницы и больницы</h6>
+                                    <h6>Больницы и медицина</h6>
                                     <p>Найдите лучшие больницы в вашем районе.</p>
                                 </div>
                             </li>
@@ -59,44 +79,9 @@
                             </li>
                         </ul>
                     </div>
-
-                    <div class="articles">
-                        <h5>Последние статьи</h5>
-                        <ul>
-                            <li>
-                                <img src="" alt="">
-                                <div class="header_p">
-                                    <h6>Советы по охране здоровья</h6>
-                                    <p>Будьте здоровы с нашим экспертным советом.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <img src="" alt="">
-                                <div class="header_p">
-                                    <h6>Техническое обслуживание автомобилей</h6>
-                                    <p>Основные советы по уходу за автомобилем.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <img src="" alt="">
-                                <div class="header_p">
-                                    <h6>Истории пользователей</h6>
-                                    <p>Посмотрите, как другие нашли отличные услуги.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <img src="" alt="">
-                                <div class="header_p">
-                                    <h6>Часто задаваемые вопросы</h6>
-                                    <p>Ответы на простые вопросы.</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
-
                 <div class="header_right">
-
+                    
                 </div>
             </div>
         </div>
@@ -105,15 +90,18 @@
 
     <main>
         <div class="contaner">
-            <div class="img_big"></div>
-            <div class="search">
-                <h2>Найдите предметы первой необходимости</h2>
-                <p class="search_p">Легко найти больницы, авторемонтные мастерские, и многое другое в вашем городе с помощью одного клика.</p>
-                <div class="search_bottom">
-                    <button class="search_button_1">Поиск по сайту</button>
-                    <button class="search_button_2">Познакомьтесь с нами</button>
+            <div class="img_big">
+                <div class="search">
+                    <h2>Найдите предметы первой необходимости</h2>
+                    <p class="search_p">Легко найти больницы, авторемонтные мастерские, и многое другое в вашем городе с помощью одного клика.</p>
+                    <div class="search_bottom">
+                        <button class="search_button_1">Поиск по сайту</button>
+                        <button class="search_button_2">Познакомьтесь с нами</button>
+                    </div>
                 </div>
             </div>
+                
+            
             <div class="open_services">
                 <h2 class="foot_h">Откройте для себя основные услуги в вашем городе с легкостью</h2>
                 <div class="foot">
@@ -139,5 +127,6 @@
             </div>
         </div>
     </main>
+    <script src="/script/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style-type: none;
+}
+.block {
+    width: 100%;
+    height: 700px; /* Задайте нужную высоту */
+    border: none; /* Убираем рамку */
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+iframe {
+    width: 80%;
+    height: 640px; /* Задайте нужную высоту */
+    border: none; /* Убираем рамку */
+}
+.h2{
+    height: 20px;
+}
+nav{
+    display: flex;
+    margin: 16px 64px 16px 64px;
+    justify-content: space-between;
+}
+
+#linkPanel1{
+    position: fixed;
+    margin-top: 20px;
+}
+.hidden1 {
+    display: none;
+}/*скрытие ссылок на сайты с сайтами */
+
+
+.button_blak{
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 40px;
+    width: 200px;
+    background-color:rgb(0, 0, 0);
+    border: none;
+    color:white;
+    cursor: pointer; /* Устанавливаем курсор по умолчанию для кнопки */
+    border: 1px solid #ccc;
+}
+.bat{
+    display: flex;
+    justify-content: space-between;
+}
